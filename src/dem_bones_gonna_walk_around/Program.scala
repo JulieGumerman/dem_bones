@@ -36,7 +36,8 @@ object Program extends App{
     gregTheSkeleton(12) = shoulder
 
     for( i <- 0 until gregTheSkeleton.length - 1){
-        gregTheSkeleton(i).sing(gregTheSkeleton(i + 1).n)
+        val nextBone = gregTheSkeleton(i+1).getName()
+        gregTheSkeleton(i).sing(nextBone)
     }
 
 }
