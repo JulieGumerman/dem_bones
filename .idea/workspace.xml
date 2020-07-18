@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="529bbeda-5898-4b3a-9f73-444d3161d794" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dem_bones_gonna_walk_around/bones.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/dem_bones_gonna_walk_around/bones.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,8 +35,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="59" />
+    <option name="x" value="12" />
+    <option name="y" value="52" />
     <option name="width" value="1400" />
     <option name="height" value="757" />
   </component>
@@ -74,7 +73,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595090775590" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595098289192" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -122,10 +121,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="59" width="1400" height="757" extended-state="0" />
+    <frame x="12" y="52" width="1400" height="757" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26067746" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26067746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -134,7 +133,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32932332" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32932332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
