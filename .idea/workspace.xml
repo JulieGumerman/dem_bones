@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="76ed19a2-606c-4a8b-beb3-0d1d6402d408" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bones/dem_bones_gonna_walk_around/main$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bones/dem_bones_gonna_walk_around/main$delayedInit$body.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bones/dem_bones_gonna_walk_around/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dem_bones_gonna_walk_around/main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/dem_bones_gonna_walk_around/Program.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bones/dem_bones_gonna_walk_around/Bone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bones/dem_bones_gonna_walk_around/Bone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bones/dem_bones_gonna_walk_around/Program$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bones/dem_bones_gonna_walk_around/Program$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dem_bones_gonna_walk_around/Bone.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/dem_bones_gonna_walk_around/Bone.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dem_bones_gonna_walk_around/Program.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/dem_bones_gonna_walk_around/Program.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595011687953</updated>
       <workItem from="1595011689964" duration="193000" />
-      <workItem from="1595011927921" duration="9379000" />
+      <workItem from="1595011927921" duration="10110000" />
     </task>
     <servers />
   </component>

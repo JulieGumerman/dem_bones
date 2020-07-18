@@ -4,7 +4,7 @@ package dem_bones_gonna_walk_around
 class Bone (name: String){
     var n: String = name
 
-    def sing(): Unit ={
-      println("The " + n + " bone's connected to the next bone.")
+    def sing(nextBone: String): Unit ={
+      println("The " + n + " bone's connected to the " + nextBone + " bone.")
     }
 }
