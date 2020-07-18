@@ -35,7 +35,7 @@ object Program extends App{
     gregTheSkeleton(11) = arm
     gregTheSkeleton(12) = shoulder
 
-    for( i <- 0 until gregTheSkeleton.length - 1){
+    for( i <- 0 until gregTheSkeleton.length - 2){
         val nextBone = gregTheSkeleton(i+1).getName()
         gregTheSkeleton(i).sing(nextBone)
     }
