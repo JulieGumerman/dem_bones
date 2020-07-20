@@ -1,38 +1,25 @@
 package dem_bones_gonna_walk_around
 
-import scala.collection.mutable.LinkedList
-
 object bones extends App{
 
   
-  def singDemBones(godName: String): Unit = {
+  def singDemBones(godName: String): List[String] = {
 
     val body = Array("toe", "foot", "ankle", "leg", "knee", "thigh", "hip", "back", "neck", "head", "finger", "hand", "arm", "shoulder")
 
-
-    val collectionOfBodyParts = body.sliding(2).map{
-      case Array(x, y) => Bone(x, y)
-    }
-
-    val incompleteSong = collectionOfBodyParts.map(bone =>
-        s"The ${bone.name} bone is connected to the ${bone.next} bone."
-    ).toList
-
-    val completeSong = incompleteSong + s"So here's the name of the ${godName}"
-
-    completeSong
+    body
+      .sliding(2)
+      .map{case Array(x, y) => Bone(x, y).sing}
+      .toList :+ s"So here's the name of the ${godName}"
   }
 
-
-
-
-  singDemBones("<<Insert your higher power's name here>>")
+  singDemBones("<<Insert your higher power's name here>>").map(println _)
 
 
 }
 
-//"body" class
-
-case class Bone (val name: String, val next: String)
+case class Bone (val name: String, val next: String) {
+  def sing = s"The ${name} bone is connected to the ${next} bone."
+}
 
 
