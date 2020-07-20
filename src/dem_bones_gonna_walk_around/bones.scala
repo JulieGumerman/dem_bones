@@ -1,45 +1,30 @@
 package dem_bones_gonna_walk_around
 
+import scala.collection.mutable.LinkedList
+
 object bones extends App{
 
-  //Current problems:
-  // 1. The bones are getting added to the hashtable out of order. Therefore the song is out of order.
-  // 2. Should be written recursively to eliminate use of for loops.
   
   def singDemBones(godName: String): Unit = {
-    //body parts
 
-    var body = Array("toe", "foot", "ankle", "leg", "knee", "thigh", "hip", "back", "neck", "head", "finger", "hand", "arm", "shoulder")
+    val body = Array("toe", "foot", "ankle", "leg", "knee", "thigh", "hip", "back", "neck", "head", "finger", "hand", "arm", "shoulder")
 
-    //hash table! Whoo!!!
 
-    val collectionOfBodyParts = scala.collection.mutable.HashMap.empty[Int,Bone]
-
-    //get body parts from array into classes; get classes into a hashtable
-
-    for (i <- 0 until body.length -1) {
-      if (i == 0) {
-        var newBone = new Bone ("none", body(i))
-        println(newBone.prev, newBone.bone)
-        collectionOfBodyParts += ((i) -> newBone)
-      }
-      else {
-        var newBone = new Bone(body(i - 1), body(i))
-        println(newBone.prev, newBone.bone)
-        collectionOfBodyParts += ((i) -> newBone)
-      }
+    val collectionOfBodyParts = body.sliding(2).map{
+      case Array(x, y) => Bone(x, y)
     }
 
-    println(collectionOfBodyParts)
+    val incompleteSong = collectionOfBodyParts.map(bone =>
+        s"The ${bone.name} bone is connected to the ${bone.next} bone."
+    ).toList
 
-    for ((key, value) <- collectionOfBodyParts) {
-      if (value.prev != "none") {
-        println(s" The ${value.prev} is connected to the ${value.bone} bone")
-      }
+    val completeSong = incompleteSong + s"So here's the name of the ${godName}"
 
-    }
-    println(s"And these are the words of the ${godName}")
+    completeSong
   }
+
+
+
 
   singDemBones("<<Insert your higher power's name here>>")
 
@@ -48,9 +33,6 @@ object bones extends App{
 
 //"body" class
 
-class Bone (val prev: String, val bone: String) {
-
-
-}
+case class Bone (val name: String, val next: String)
 
 
