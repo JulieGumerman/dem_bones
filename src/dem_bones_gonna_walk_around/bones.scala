@@ -2,6 +2,10 @@ package dem_bones_gonna_walk_around
 
 object bones extends App{
 
+  //Current problems:
+  // 1. The bones are getting added to the hashtable out of order. Therefore the song is out of order.
+  // 2. Should be written recursively to eliminate use of for loops.
+  
   def singDemBones(godName: String): Unit = {
     //body parts
 
@@ -29,7 +33,10 @@ object bones extends App{
     println(collectionOfBodyParts)
 
     for ((key, value) <- collectionOfBodyParts) {
-      println(s" The ${value.prev} is connected to the ${value.bone} bone")
+      if (value.prev != "none") {
+        println(s" The ${value.prev} is connected to the ${value.bone} bone")
+      }
+
     }
     println(s"And these are the words of the ${godName}")
   }
